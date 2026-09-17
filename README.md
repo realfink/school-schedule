@@ -13,6 +13,6 @@ One of the parameters is a function that actually pulls the data out.
 The output is a sheet in the target spreadsheet that contains all the subjects for each hour of the week for each class. This table can easily be looked-up to find the subjects
 being taught when a student wants to take a music course.
 
-This script assumes that there is a named range ("נושאים") in the target directory with the names of all the subjects in a single column.
+This script assumes that there is a named range ("SUBJECTS") in the target directory with the names of all the subjects in a single column.
 
 When the scripts are run, if there is text in a hour's cell but none of the text matches the list of subjects, it will set the subject to "MISSING" and also log that as an error.
