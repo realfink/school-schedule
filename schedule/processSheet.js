@@ -1,4 +1,4 @@
-function processGirlsSheet(sourceSheet, targetSheet) {
+function processSheet(sourceSheet, targetSheet) {
   var data = sourceSheet.getDataRange().getValues();
   var classNumber = sourceSheet.getName();
   Logger.log("Processing class: " + classNumber)

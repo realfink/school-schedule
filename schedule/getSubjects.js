@@ -1,5 +1,5 @@
 var subjectList = null;
-const RANGE_NAME = "נושאים";
+const RANGE_NAME = "SUBJECTS";
  
 function getSubjectList() {
   var namedRange = SpreadsheetApp.getActiveSpreadsheet().getRangeByName(RANGE_NAME);
@@ -9,8 +9,9 @@ function getSubjectList() {
 function getSubjects(day) {
   if (!subjectList)
     getSubjectList();
-  if (!day || day == "")
+  if (!day || day == "") {
     return("חופשי");
+  }
   else {
     var subjectarray = subjectList.filter(word => day.includes(word));
     if (!subjectarray.length) {
